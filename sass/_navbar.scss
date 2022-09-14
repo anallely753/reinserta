@@ -14,7 +14,7 @@
 // Section: Navbar Menu
 .navbar {
     width: 100%;
-    height: 70px;
+    height: 80px;
     border: none;
     outline: none;
     color: #fff;
@@ -25,12 +25,12 @@
 
     .wrapper {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         width: 100%;
-        height: 70px;
+        height: 80px;
         margin: 0 auto;
         background-color: variables.$negro;
     }
@@ -98,6 +98,7 @@
     }
 
     .menu {
+        padding-right: 2rem;
         &-inner {
             display: flex;
             flex-direction: row;
@@ -121,24 +122,76 @@
     }
 
     &__brand{
-        padding: 0 5%;
-        position: absolute;
+        padding: 0;
+        position: relative;
         display: flex;
         align-items: center;
+        padding-right: 5%;
+
+        img{
+            transition: transform .3s ease;
+        }
+
+        img:hover{
+            transform: scale(1.1);
+            filter: contrast(.6);
+        }
 
         &--xdata{
-            height: 50px;
-            margin-right: 8px;
+            height: 45px;
+            margin-right: 1.8rem;
         }
         &--reinserta{
-            height: 65px;
+            height: 60px;
         }
+    }
+
+    .menu-link img{
+        width: 32px;
+        transition: transform .3s ease;
+    }
+
+    .menu-link img:hover{
+        transform: scale(1.1);
+        filter: contrast(.6);
+    }
+
+    hr{
+        height: 50px;
+        color: #fff;
+        border-width: 0.5px;
     }
 }
 
 // Section: Responsive Media Query
 @media only screen and (max-width: 768px) {
     .navbar {
+        height: 70px;
+        padding: 0;
+
+        &__brand {
+            padding: 0 5%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+    
+            &--xdata {
+                height: 50px;
+                margin-right: 8px;
+            }
+    
+            &--reinserta {
+                height: 65px;
+            }
+        }
+
+        .wrapper{
+            height: 70px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         .burger {
             display: block;
             opacity: 1;
