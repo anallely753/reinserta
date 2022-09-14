@@ -11,7 +11,7 @@
 
 .navbar {
   width: 100%;
-  height: 100px;
+  height: 70px;
   border: none;
   outline: none;
   color: #fff;
@@ -27,7 +27,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 70px;
   margin: 0 auto;
   background-color: #212121;
 }
@@ -129,7 +129,7 @@
     visibility: hidden;
     overflow: hidden;
     transition: all 0.35s ease;
-    margin-top: 90px;
+    margin-top: 60px;
   }
   .navbar .menu.is-active {
     opacity: 1;
@@ -172,7 +172,7 @@ body {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 70px;
   background-color: #212121;
 }
 

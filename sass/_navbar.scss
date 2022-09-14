@@ -14,7 +14,7 @@
 // Section: Navbar Menu
 .navbar {
     width: 100%;
-    height: 100px;
+    height: 70px;
     border: none;
     outline: none;
     color: #fff;
@@ -30,7 +30,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 100px;
+        height: 70px;
         margin: 0 auto;
         background-color: variables.$negro;
     }
@@ -154,7 +154,7 @@
             visibility: hidden;
             overflow: hidden;
             transition: all 0.35s ease;
-            margin-top: 90px;
+            margin-top: 60px;
 
             &.is-active {
                 opacity: 1;
