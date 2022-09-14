@@ -1,0 +1,5 @@
+@use 'variables';
+
+.section1{
+    background-color: variables.$arena-fondo;
+}

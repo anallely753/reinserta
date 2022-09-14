@@ -1,0 +1,21 @@
+@use 'navbar';
+@use 'reset';
+@use 'variables';
+@use 'section1';
+
+
+body{
+    background-color: variables.$arena-fondo;
+    height: 200vh;
+}
+main{
+    padding-top: 100px;
+    background-color: variables.$negro;
+}
+
+.lineas__mobile{
+    position: relative;
+    // top: 100px;
+    width: 100%;
+}
+
