@@ -3,6 +3,7 @@ $arena-fondo: #f3f0ec;
 $negro: #212121;
 $white: #fff;
 $pink: pink;
+$gris68: #686868;
 
 // sombras
 $shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
@@ -17,4 +18,20 @@ $shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
 @font-face {
     font-family: 'AG-Super';
     src: url('../fonts/AkzidenzGrotesk-Super.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AG-Bold';
+    src: url('../fonts/AkzidenzGrotesk-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AG-Regular';
+    src: url('../fonts/AkzidenzGrotesk-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AG-Medium';
+    src: url('../fonts/AkzidenzGrotesk-Medium.otf') format('truetype');
+    font-weight: 500;
 }

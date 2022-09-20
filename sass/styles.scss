@@ -2,16 +2,84 @@
 @use 'reset';
 @use 'variables';
 @use 'section1';
+@use 'section2';
 
 
 body{
     background-color: variables.$arena-fondo;
     height: 200vh;
+    scroll-behavior: smooth;
 }
 main{
     padding-top: 80px;
     background-color: variables.$negro;
 }
 
+.section__titulo{
+    font-family: 'Ag-Medium', sans-serif;
+}
+
+.myContainer{
+    padding: 5% 8%;
+}
+
+p{
+    font-family: 'Ag-Regular', sans-serif;
+}
+.section__p--bold {
+    font-family: 'Ag-Bold', sans-serif;
+    transform: all .3s ease;
+
+    &__a:hover{
+        text-decoration: underline;
+    }
+}
+
+.quienesSomos__empresa--p__bold--a{
+    color: variables.$arena-fondo;
+}
 
 
+@media (min-width: 576px) {
+    .myContainer{
+        padding: 5% 15%;
+    }
+    p{
+        font-size: .91rem;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .section__titulo {
+        font-size: 1.5rem;
+    }
+    .myContainer {
+        padding: 5% 10%;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+    .myContainer {
+        padding: 10%;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+   
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1600px) {
+    .myContainer {
+        padding: 10% 15%;
+    }
+}
